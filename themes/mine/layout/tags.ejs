@@ -1,0 +1,21 @@
+<div id="container">
+  <div id="wrap">
+    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+    <div class="outer">
+      <section id="main">
+        <section class="archives-wrap">
+          <% if (site.tags.length){ %>
+            <div class="page-type-title"><%= __('tags') %></div>
+            <div class="page-type-content">
+            <%- list_tags({show_count: theme.show_count}) %>
+            </div>
+          <% } %>
+        </section>
+      </section>
+      <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
+    </div>
+    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
+  </div>
+  <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
+  <%- partial('_partial/after-footer') %>
+</div>
