@@ -1,11 +1,11 @@
 # Menu-Sidebar
-menu:
-  Home: /
-  Archives: /archives
-  Categories: /categories
-  Tags: /tags
-  About: /about
-rss: /atom.xml
+#menu:
+  #Home: /
+  #Archives: /archives
+  #Categories: /categories
+  #Tags: /tags
+  #About: /about
+#rss: /atom.xml
 banner: "images/banner_forest.jpg"
 
 # Content
