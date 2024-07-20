@@ -1,7 +1,7 @@
 ---
 title: Launching a new blog post!
 date: 2024:07:17 18:00:00
-tags: ['random', 'updates']
+tags: ['photography']
 galleryImages: [
     {'thumbNail': '/css/images/banner_forest.jpg', 'url':'/css/images/banner_forest.jpg', 'width': 1920, 'height': 1282},
     {'thumbNail': '/css/images/banner_colour.jpg', 'url':'/css/images/banner_color.jpg', 'width': 1920, 'height': 1280},

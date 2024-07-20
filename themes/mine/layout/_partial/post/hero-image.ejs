@@ -1,7 +1,5 @@
 <% if (image) { %>
-<div class="article-hero-image">
-    <a class="article-gallery-img fancybox" href="<%- url_for(image) %>" rel="gallery_<%= post._id %>">
+<div class="article-hero-img">
       <img src="<%- url_for(image) %>" itemprop="image">
-    </a>
 </div>
 <% } %>
