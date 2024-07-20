@@ -3,14 +3,19 @@
     <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     <%- partial('post/category') %>
   </div>
-  <div class="article-inner">
-    <%- partial('post/gallery') %>
+  <div class="article-inner"
     <% if (post.link || post.title){ %>
       <header class="article-header">
         <%- partial('post/title', {class_name: 'p-name article-title'}) %>
       </header>
     <% } %>
     <div class="e-content article-entry" itemprop="articleBody">
+      <% if (index && post.indexImage) { %>
+        <%- partial('post/hero-image', {image: post.indexImage}) %>
+      <% } %>
+      <% if (!index && post.heroImage) { %>
+        <%- partial('post/hero-image', {image: post.heroImage}) %>
+      <% } %>
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
@@ -20,6 +25,9 @@
         <% } %>
       <% } else { %>
         <%- post.content %>
+      <% } %>
+      <% if (!index) { %>
+        <%- partial('post/gallery') %>
       <% } %>
     </div>
     <footer class="article-footer">
