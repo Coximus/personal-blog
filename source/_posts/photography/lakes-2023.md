@@ -5,7 +5,8 @@ tags: ['photography']
 galleryImages: [
     {'thumbNail': '/images/lakes-2023/early-shot_thumb.jpg', 'url':'/images/lakes-2023/early-shot.jpg', 'width': 805, 'height': 1210},
     {'thumbNail': '/images/lakes-2023/rydal-cave_thumb.jpg', 'url':'/images/lakes-2023/rydal-cave_thumb.jpg', 'width': 1210, 'height': 805},
-    {'thumbNail': '/images/lakes-2023/flowing-water_thumb.jpg', 'url':'/images/lakes-2023/flowing-water.jpg', 'width': 1210, 'height': 805}]
+    {'thumbNail': '/images/lakes-2023/flowing-water_thumb.jpg', 'url':'/images/lakes-2023/flowing-water.jpg', 'width': 1210, 'height': 805},
+    {'thumbNail': '/images/lakes-2023/waterfall_thumb.jpg', 'url':'/images/lakes-2023/waterfall.jpg', 'width': 805, 'height': 1210}]
 indexImage: '/css/images/banner_color.jpg'
 heroImage: '/css/images/banner_color.jpg'
 ---
