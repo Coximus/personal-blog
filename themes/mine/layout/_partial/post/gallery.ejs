@@ -4,14 +4,12 @@
       <% post.galleryImages.forEach(function(photo, i){ %>
         <a
           data-fancybox="gallery"
-          data-title="Sample content #<%= i %>"
+          data-title="<%= photo.description ? photo.description : '' %>"
           href="<%- url_for(photo.url) %>"
         >
-          <img
-            width="200"
-            height="150"
-            alt=""
-            src="<%- url_for(photo.url) %>"
+          <img class="article-gallery-photos-photo"
+            alt="<%= photo.alt ? photo.alt : '' %>"
+            src="<%- url_for(photo.thumbNail) %>"
           />
         </a>
       <% }) %>
@@ -33,13 +31,6 @@ Fancybox.bind('[data-fancybox="gallery"]', {
       </div>
       <div class="fancybox__col">
         <div class="fancybox__data">
-          <p class="mb-4 text-lg font-semibold">Hello</p>
-          <p class="mb-4">
-            Here you can place any content such as advertisement or gallery description.
-          </p>
-          <p class="mb-4">
-            You can dynamically update this content using callbacks.
-          </p>
           <p class="font-semibold" id="fancybox_title"></p>
         </div>
       </div>
