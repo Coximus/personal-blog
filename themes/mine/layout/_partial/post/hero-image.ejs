@@ -1,5 +1,11 @@
 <% if (image) { %>
 <div class="article-hero-img">
-      <img src="<%- url_for(image) %>" itemprop="image">
+      <% if (index){ %>
+            <a href="<%- url_for(post.path) %>">
+                  <img src="<%- url_for(image) %>" itemprop="image">
+            </a>
+      <% } else { %>
+            <img src="<%- url_for(image) %>" itemprop="image">
+      <% } %>
 </div>
 <% } %>
