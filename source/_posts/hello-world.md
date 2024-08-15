@@ -1,6 +1,6 @@
 ---
 title: Launching a new blog post!
-date: 2024:07:17 18:00:00
+date: 2024-07-17 18:00:00
 tags: ['random', 'updates']
 ---
 I'm looking to relaunch my site for all things related to my projects and hobbies. This is my trial of Hexo as a framework

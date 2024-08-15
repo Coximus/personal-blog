@@ -1,6 +1,6 @@
 ---
 title: Photography trip to Ambleside
-date: 2024:08:11 18:00:00
+date: 2024-08-11 18:00:00
 tags: ['photography']
 galleryImages: [
     {
